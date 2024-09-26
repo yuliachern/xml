@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="combined_scenarios_with_defaults.xsl"?>
+<CarePlatform>
+    <Person type="disabled">
+        <PersonID>P001</PersonID>
+        <Name>John Doe</Name>
+        <Age>78</Age>
+        <Needs>Wheelchair Assistance</Needs>
+        <Needs>Home Care</Needs>
+    </Person>
+    <Person type="elderly">
+        <PersonID>P002</PersonID>
+        <Name>Jane Smith</Name>
+        <Age>85</Age>
+        <Needs>Transportation</Needs>
+        <Needs>Medical Checkup</Needs>
+    </Person>
+    <Service>
+        <ServiceID>S001</ServiceID>
+        <ServiceName>Wheelchair Assistance</ServiceName>
+        <ProviderID>PR001</ProviderID>
+        <Category>Personal Assistance</Category>
+    </Service>
+    <Service>
+        <ServiceID>S002</ServiceID>
+        <ServiceName>Home Care</ServiceName>
+        <ProviderID>PR002</ProviderID>
+        <Category>Home Services</Category>
+    </Service>
+    <Provider>
+        <ProviderID>PR001</ProviderID>
+        <Name>Care Providers Inc.</Name>
+        <ContactInfo>1234 Elm St, Cityville</ContactInfo>
+    </Provider>
+    <Provider>
+        <ProviderID>PR002</ProviderID>
+        <Name>Home Helpers</Name>
+        <ContactInfo>5678 Oak St, Townsville</ContactInfo>
+    </Provider>
+    <Schedule>
+        <ScheduleID>SC001</ScheduleID>
+        <PersonID>P001</PersonID>
+        <ServiceID>S001</ServiceID>
+        <Date>2024-08-26</Date>
+        <Time>10:00:00</Time>
+    </Schedule>
+    <Schedule>
+        <ScheduleID>SC002</ScheduleID>
+        <PersonID>P002</PersonID>
+        <ServiceID>S002</ServiceID>
+        <Date>2024-08-27</Date>
+        <Time>14:00:00</Time>
+    </Schedule>
+</CarePlatform>
